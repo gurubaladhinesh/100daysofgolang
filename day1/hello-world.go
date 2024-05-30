@@ -28,7 +28,7 @@ func main() {
 	var f float32=4.23
 	var g bool = true
 	var h bool
-	i:= 2.11
+	ii:= 2.11
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
@@ -37,7 +37,7 @@ func main() {
 	fmt.Println(f)
 	fmt.Println(g)
 	fmt.Println(h)
-	fmt.Println(i)
+	fmt.Println(ii)
 
 	//constants
 	const radius float32=4
