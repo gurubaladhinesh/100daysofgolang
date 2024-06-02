@@ -8,6 +8,8 @@ import (
 const pi float32=3.14
 
 func main() {
+	//go mod init techguru.com/100days/day5
+	
 	//hello-world
 	fmt.Println("Hello World")
 
