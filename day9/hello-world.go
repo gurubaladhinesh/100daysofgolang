@@ -20,20 +20,18 @@ func main() {
 	}
 
 	fmt.Println("fibonacci", fib(7))
-	fmt.Println("factorial", fact(*big.NewInt(200)))
+	fmt.Println("factorial", fact(big.NewInt(5)))
 
 }
 
-
-//TODO - revisit this after learning pointers
-func fact(n big.Int) *big.Int{
+//TODO
+func fact(n *big.Int) *big.Int{
 	one := big.NewInt(1)
 	cmp:= n.Cmp(one)/*n.Cmp(one)*/
 	if cmp == -1 || cmp ==0 {
-		return &n
+		return n
 	}
-	sub:=n.Sub(&n,one)
-	mul:= n.Mul(&n,fact(*sub))
+	mul:= n.Mul(n,fact(n.Sub(n,one)))
 	return mul
 }
 
